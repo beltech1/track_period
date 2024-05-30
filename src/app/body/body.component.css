@@ -1,0 +1,126 @@
+/* Style for the parent container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Adjust padding as needed */
+  flex-direction: column; /* Ensure elements stack vertically */
+}
+
+/* Style for the progress bar */
+.progress-bar {
+  position: relative;
+  height: 230px; /* Slightly larger than the element */
+  width: 230px;
+  border-radius: 50%;
+  
+  background: conic-gradient(#f79489 0% 75%, rgba(209, 52, 52, 0.1) 75% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px; /* Add space above the progress bar */
+  margin-bottom: 45px; /* Add space below the progress bar */
+}
+
+/* Style for the element */
+.element {
+  height: 160px;
+  width: 160px;
+  border: 0px solid rgba(100, 100, 100, 1);
+  border-radius: 100px; /* Half of the width and height for a perfect circle */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Align content in the center vertically */
+  align-items: center; /* Align content in the center horizontally */
+  text-align: center;
+
+  background-color: #fadcd9; /* Assuming white background for the inner circle */
+}
+
+.element > br:first-child {
+  margin-top: 10px; /* Adjust spacing as needed */
+}
+
+.element > br:nth-child(2) {
+  font-size: 17px;
+}
+
+.horizontal-line {
+  border-top: 2px solid #ccc; /* Adjust color and thickness as needed */
+  width: 70%; /* Optional: Set width to span the entire container */
+  margin: 10px 0; /* Optional: Add margin for spacing */
+}
+.heartbeat {
+	-webkit-animation: heartbeat 2s ease-in-out infinite both;
+	        animation: heartbeat 2s ease-in-out infinite both;
+}
+
+ @-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+

@@ -1,0 +1,39 @@
+/* progress-bar.component.css */
+
+.progress-container {
+  width: 30px; /* Narrower width for vertical bar */
+  height: 200px; /* Adjust height as needed */
+  background-color:white;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 20px auto;
+  display: flex;
+  align-items: flex-end; /* Align the progress bar to the bottom */
+}
+
+.progress-bar {
+  width: 100%; /* Full width to fill the container */
+  height: 0;
+  text-align: center;
+  color: white;
+  transition: height 0.25s, background-color 0.25s; /* Animate the height and color change */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  background-color: #4caf50;
+}
+
+.blue {
+  background-color: #2196F3;
+}
+
+.orange {
+  background-color: #FF9800;
+}
+
+.red {
+  background-color: #f44336;
+}

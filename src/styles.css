@@ -1,0 +1,13 @@
+
+@layer bootstrap ,primeng;
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "bootstrap/dist/css/bootstrap.min.css" layer(bootstrap);
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css" layer(primeng);body {
+    background-image: url("assets/m1.png"); /* Replace with your image name */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    margin: 0;
+  }

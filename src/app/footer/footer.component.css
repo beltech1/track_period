@@ -1,0 +1,57 @@
+.card {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; /* Adds margin above the card */
+    box-shadow: none;
+}
+
+.p-tabmenu .p-menuitem-link {
+    border: none;
+    text-align: center;
+}
+
+.p-tabmenu .p-menuitem-link a {
+    border: none;
+}
+
+.p-tabmenu .p-menuitem-link span {
+    display: inline-block;
+    margin: 0;
+}
+
+.p-tabmenu .p-menuitem-link .ml-2 {
+    margin-left: 0.5rem; /* Adjust spacing as necessary */
+}
+
+/* Additional styles to ensure full centralization */
+.p-tabmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.p-tabmenu .p-menuitem-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p-menuitem-link a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Creates the circular shape */
+    background-color: transparent; /* Initially transparent */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .p-menuitem-link a:active::after { /* Applies style on click */
+    opacity: 0.3; /* Sets opacity to create the cycle effect */
+  }
+  

@@ -1,0 +1,46 @@
+<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="light">
+  <div class="bg-light p-4">
+    <h5 class="text-body-emphasis h4"></h5>
+    <span class="text-body-secondary"><div class="container">
+      <div class="row">
+        <div class="col-auto">
+          <div class="card flex justify-content-center">
+            <p-button (click)="showDialog()" label="ADD" [outlined]="true" severity="danger"/>
+            <p-dialog header="Add profile" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
+                <span class="p-text-secondary block mb-5">information</span>
+                <div class="flex align-items-center gap-3 mb-5">
+                  <label for="email" class="font-semibold w-6rem">flow</label><br>
+                  <input type="date" class="flex-auto">
+                 
+              </div>
+                
+                <div class="flex align-items-center gap-3 mb-3">
+                    <label for="username" class="font-semibold w-6rem">number</label><br>
+                    <input pInputText id="username" class="flex-auto" autocomplete="off" placeholder="y"/>
+                </div>
+               
+                <div class="flex justify-content-end gap-2">
+                    <p-button label="Cancel" severity="secondary" (click)="visible = false" />
+                    <p-button label="Save" label="ADD" [outlined]="true" severity="primary"(click)="visible = false" />
+                </div>
+            </p-dialog>
+        </div>
+        </div>
+        <div class="col-auto">
+        <!--** next butto goes here -->
+        </div>
+      </div>
+    </div></span>
+ 
+  </div>
+</div>
+
+<nav class="navbar navbar-dark bg-light">
+  <div class="container-fluid">
+    <div>{{greeting}}</div>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-caret-down" style="font-size: 2rem; color: #f79489;"></i>
+
+    </button>
+  </div>
+</nav>
